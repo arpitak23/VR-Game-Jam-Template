@@ -19,8 +19,8 @@ public class GenerativeArt2 : MonoBehaviour
 
         for (int i = 0; i < numCircles; i++)
         {
-            //Vector3 spawnPosition = new Vector3(Random.Range(0.0f, 10.0f), Random.Range(0.0f, 10.0f), 0.0f);
-            Vector3 spawnPosition = new Vector3(Random.Range(0.0f, 10.0f), Random.Range(0.0f, 10.0f), Random.Range(0.0f, 10.0f));
+            Vector3 spawnPosition = new Vector3(Random.Range(0.0f, 30.0f), Random.Range(0.5f, 10.0f), 0.0f);
+            //Vector3 spawnPosition = new Vector3(Random.Range(0.0f, 10.0f), Random.Range(0.0f, 10.0f), Random.Range(0.0f, 10.0f));
             circles[i] = Instantiate(circlePrefab, spawnPosition, Quaternion.identity);
 
             float size = Random.Range(minSize, maxSize);
